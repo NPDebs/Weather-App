@@ -1,10 +1,3 @@
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': '6bd6d56883msh82d47d007debe76p1d05a0jsn4f608cf77b23',
-// 		'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
-// 	}
-// };
 
 // fetch('https://weatherapi-com.p.rapidapi.com/forecast.json?q=London&days=1', options)
 // 	.then(response => response.json())
@@ -26,17 +19,16 @@ const wind = document.getElementById('windInfo')
 const getWeather = (city) => {
     const url = 'https://weatherapi-com.p.rapidapi.com/forecast.json?q='
 
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '6bd6d56883msh82d47d007debe76p1d05a0jsn4f608cf77b23',
-            'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
-        }
-    };
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //         'X-RapidAPI-Key': config.API_KEY,
+    //         'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+    //     }
+    // };
 
     return fetch(`${url}${city}`, options)
     .then(response => response.json())
-    // .then(data => console.log(data.name))
     .then(data => data)
     .catch(err => console.error(err));
 }
