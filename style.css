@@ -5,14 +5,12 @@
 body {
     background-color: rgb(152, 152, 235);
     font-family: 'Josefin Sans';
-    /* text-align: center; */
 }
 .container {
     width: 50vw;
     height: auto;
     padding: 50px;
     margin: 60px auto;
-    /* border: 1px solid grey; */
     border-radius: 4%;
     background-color: white;
 }
@@ -45,6 +43,9 @@ body {
 .icon {
     width: 20px;
     height: 20px;
+}
+hr {
+    color: rgb(152, 152, 235)
 }
 #cityCountry {
     justify-content: space-around;
@@ -108,6 +109,7 @@ h3 {
     height: auto;
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
     display: none;
 }
 
@@ -131,4 +133,124 @@ h3 {
     width: 45%;
     display: grid;
     place-items: center;
+}
+.forecastpg {
+    text-align: center;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px){
+    #title {
+        margin-bottom: 50px;
+    }
+    .container {
+    width: 80vw;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    }
+    
+    #searchField {
+        width: 9rem;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .icon {
+        width: 17px;
+        height: 17px;
+    }
+    #flexOne {
+        display: flex;
+        flex-direction: column;
+    }
+    #cityCountry {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        text-align: center;
+        font-size: 13px;
+    }
+    #countryDiv {
+        margin: 0;
+        width: 80%;
+    }
+    #cityDiv {
+        margin: 0;
+        width: 80%;
+    }
+    #localTime {
+        margin: 0;
+        width: 80%;
+    }
+    .weatherImgDiv {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 100px;
+    }
+    #degreeDiv {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 120px;
+    }
+    .tempSpan {
+        width: 40%;
+        height: 70%;
+        font-size: 2rem;
+    }
+
+    #windInfoDiv {
+        width: 90%;
+        height: auto;
+        font-size: 13px;
+    }
+    #forecastDiv {
+        font-size: 14px;
+        margin: 0 auto;
+        place-content: center;
+        display: none;
+    }
+    .forecastFlex {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex2 {
+        width: 95%;
+        display: grid;
+        place-items: center;
+    }
+    .flex3 {
+        width: 95%;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1075px){
+    .container {
+    width: 90vw;
+    height: auto;
+    padding: 30px;
+    }
+
+    #cityCountry {
+        font-size: 16px;
+        text-align: center;
+        justify-content: space-around;
+        margin-bottom: 40px;
+    }
+    #countryDiv {
+        margin: 0;
+        width: 70%;
+    }
+    #cityDiv {
+        margin: 0;
+        width: 70%;
+    }
+    #localTime {
+        margin: 0;
+        width: 70%;
+}
 }
