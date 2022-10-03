@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Weather App</title>
 </head>
 <body>
     <div class="header">
-        <h1 id="title">Weather App</h1>
+        <h1 id="title">Weather App
+            <img class="image" src="images/cloud3.png" alt="sunset-img" srcset="">
+        </h1>
     </div>
     
     <div class="container">
@@ -19,7 +23,7 @@
                 <button type="button" onclick="searchCity()"><img src="images/search.ico" alt="" class="icon"></button>
             </div>
             <hr>
-            <div class="cityCountry">
+            <div id="cityCountry">
                 <p id="countryDiv">Nigeria</p>
                 <p id="cityDiv">Lagos</p>
                 <p id="localTime">00:00</p>
@@ -31,32 +35,50 @@
 
             <div id="flexOne">
                 <div class="weatherImgDiv">
-                    <img src="images/cloud.png" alt="sunset-img" srcset="" id="img">
+                    <img src="images/cloud.png" alt="sunset-img" class="image" id="img">
                 </div>
 
                 <div id="degreeDiv">
-                        <p class="tempDiv tempSpan">Temp<br><span id="temp">37c</span></p> 
+                    <p class="tempDiv tempSpan">Temp<br><span id="temp">37c</span></p> 
                 </div>
             </div>
-
-            
-            <div class="windInfo">
-                <p id="windInfo">The wind speed and direction are:</p>
+ 
+            <div id="windInfoDiv">
+                <p id="windInfo"></p>
             </div>
 
             <hr>
 
-            <div class="forecast">
+            <div id="forecastDiv">
+                <h3>Forecast</h3>
+
+                <div class="forecastFlex">
+                    <div class="flex2">
+                        <div class="conditionDiv conditionOne">
+                            <img src="images/cloud2.png" alt="sunset-img" class="image" id="conditionIcon1">
+                            <p id="conditionText1"></p>
+                        </div>
+                        
+                        <div id="forecastList1">
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="flex3">
+                        <div class="conditionDiv conditionTwo">
+                            <img src="images/cloud2.png" alt="sunset-img" class="image" id="conditionIcon2">
+                            <p id="conditionText2"></p>
+                        </div>
+                        
+                        <div id="forecastList2">
+                        </div>
+                    </div>
+                </div>
+                
                 
             </div>
-
-            
-
-
-
         </div>
-
-
     </div>
 
 
