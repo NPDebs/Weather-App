@@ -24,7 +24,7 @@ const getWeather = (city) => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': config.API_KEY,
+            'X-RapidAPI-Key': '6bd6d56883msh82d47d007debe76p1d05a0jsn4f608cf77b23',
             'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
         }
     };
